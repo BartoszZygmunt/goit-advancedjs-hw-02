@@ -14,7 +14,7 @@ let timerId = 0;
 function startTimer() {
   timerId = setInterval(showTimeLeft, 1000);
   console.log('Timer started, ID: ', timerId);
-  callendar[1].disabled = true;
+  callendar[0].disabled = true;
   console.log(callendar);
   button.disabled = true;
   console.log('Callendar and button disabled');
@@ -66,7 +66,7 @@ function showTimeLeft() {
       position: 'topRight',
       timeout: 5000,
     });
-    callendar[1].disabled = false;
+    callendar[0].disabled = false;
     button.disabled = false;
     return;
   }
